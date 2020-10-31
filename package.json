@@ -1,0 +1,31 @@
+{
+  "name": "prefresh-webpack5",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "webpack serve"
+  },
+  "repo": "https://github.com/jeremy-coleman/prefresh-webpack5-typescript",
+  "author": "baby jesus",
+  "license": "ISC",
+  "dependencies": {
+    "preact": "10.5.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "7.12.1",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/plugin-proposal-decorators": "7.12.1",
+    "babel-plugin-module-resolver": "4.0.0",
+    "@babel/core": "7.12.3",
+    "@babel/plugin-transform-react-jsx": "7.12.1",
+    "@babel/preset-typescript": "7.12.1",
+    "@babel/preset-env": "7.12.1",
+    "@prefresh/babel-plugin": "0.2.2",
+    "@prefresh/webpack": "2.1.0",
+    "babel-loader": "8.1.0",
+    "html-webpack-plugin": "4.5.0",
+    "webpack": "5.3.2",
+    "webpack-cli": "4.1.0",
+    "webpack-dev-server": "3.11.0"
+  }
+}
