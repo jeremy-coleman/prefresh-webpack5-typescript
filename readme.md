@@ -4,5 +4,4 @@ webpack 5 you have to install webpack cli and webpack dev server then use webpac
 
 also properly set up babel/preset-typescript which has 4 config requirements. cool
 
-
 anyone know how to get source maps working properly?

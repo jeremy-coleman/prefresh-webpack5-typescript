@@ -3,7 +3,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const PreactRefreshPlugin = require("@prefresh/webpack");
-
+const {TsconfigPathsPlugin} = require("tsconfig-paths-webpack-plugin")
 const makeConfig = () => {
   const { NODE_ENV } = process.env;
   const isProduction = NODE_ENV === "production";
@@ -45,6 +45,9 @@ const makeConfig = () => {
     },
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".jsx", ".mjs", ".json"],
+      plugins: [
+        new TsconfigPathsPlugin()
+      ]
     },
     plugins: WEBPACK_PLUGINS,
     module: {

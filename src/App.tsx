@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { useCounter } from './useCounter';
+import { useCounter } from '@hooks/useCounter';
 
 const Comp1 = () => {
 	const [count, increment] = useCounter(0);
