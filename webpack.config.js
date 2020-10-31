@@ -17,6 +17,7 @@ const makeConfig = () => {
   ];
 
   if (!isProduction) {
+    //WEBPACK_PLUGINS.push(new webpack.SourceMapDevToolPlugin());
     WEBPACK_PLUGINS.push(new PreactRefreshPlugin());
     WEBPACK_PLUGINS.push(new webpack.HotModuleReplacementPlugin());
   }
@@ -27,20 +28,20 @@ const makeConfig = () => {
     entry: "./src/index.tsx",
     stats: "normal",
     devServer: {
-      contentBase: path.join(__dirname, "dist"),
+      //contentBase: path.join(__dirname, "dist"),
       host: "localhost",
       port: 3000,
       historyApiFallback: true,
       hot: true,
       inline: true,
-      publicPath: "/",
+      //publicPath: "/",
       clientLogLevel: "none",
       open: true,
       overlay: true,
     },
     output: {
       path: path.resolve(__dirname, "dist"),
-      publicPath: "/",
+      //publicPath: "/",
     },
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".jsx", ".mjs", ".json"],

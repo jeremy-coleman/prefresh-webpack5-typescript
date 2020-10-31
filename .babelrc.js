@@ -10,13 +10,19 @@ module.exports = {
 	],
 	plugins: [
 		'@prefresh/babel-plugin',
-		[
-			'@babel/plugin-transform-react-jsx',
-			{
-				pragma: 'h',
-				pragmaFrag: 'Fragment'
-			}
-		]
+		  ["@babel/transform-react-jsx", {
+	useBuiltIns: true,
+	runtime: "automatic",
+	useSpread: true,
+	importSource: "preact"
+  }],
+		// [
+		// 	'@babel/plugin-transform-react-jsx',
+		// 	{
+		// 		pragma: 'h',
+		// 		pragmaFrag: 'Fragment'
+		// 	}
+		// ]
 	]
 };
 
