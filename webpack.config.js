@@ -11,7 +11,9 @@ const makeConfig = () => {
 
   // Build plugins
   const WEBPACK_PLUGINS = [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./src/template.html"
+    }),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify(NODE_ENV),
     }),
@@ -69,6 +71,7 @@ const makeConfig = () => {
   };
 
   return config;
+  
 };
 
 module.exports = makeConfig();

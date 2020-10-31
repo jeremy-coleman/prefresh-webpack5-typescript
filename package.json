@@ -7,7 +7,12 @@
   "repo": "https://github.com/jeremy-coleman/prefresh-webpack5-typescript",
   "author": "baby jesus",
   "license": "ISC",
+  "prettier":{
+    "printWidth": 120
+  },
   "dependencies": {
+    "@fluentui/react": "7.149.2",
+    "@material-ui/core": "4.11.0",
     "preact": "10.5.5"
   },
   "devDependencies": {
